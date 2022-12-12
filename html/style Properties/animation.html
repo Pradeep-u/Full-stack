@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Animation</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      width: 100px;
+      height: 100px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box{
+       width: 200px;
+       height: 200px;
+       background: blue;
+       transition: 2s;
+    }
+    .box:hover{
+      width: 200px;
+      height: 200px;
+      border-radius: 30%;
+      background: cyan;
+      /* border: 5px solid green ; */
+      transition: 2s;
+      transform: translateX(100px);
+      transform: translateY(100px);
+      /* transform: translateZ(100px); not work  */
+      /* transform: translate(100px,100px); x and y */
+      transform: rotateX(360deg);
+      transform: rotateY(360deg);
+      transform: rotateZ(360deg);
+      /* transform: rotate(360deg,360deg); This IS for Z */
+      transform: scaleX(10);
+      transform: scaleY(10);
+      transform: scaleZ(10);
+      /* transform: scale(10,10); x and y  */
+      transform: skewX(50deg);
+      transform: skewY(60deg);
+      /* transform: skew(50deg,60deg); x and y */
+    }
+  </style>
+</head>
+<body>
+  <h1>Hey Animation</h1>
+    <div class="box">
+
+    </div>
+</body>
+</html>
